@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/lightning_2Sb_icon.ico">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Saankethika 2020</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- firebase -->
+    <script>
+        $(document).ready(function() {
+            $("#li1").click(function() {
+                $("#InnovationMind").show();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                
+            });
+            $("#li2").click(function() {
+                $("#InnovationMind").hide();
+                $("#ElectronicsExtrapolated").show();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                
+            });
+            $("#li3").click(function() {
+                $("#InnovationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").show();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                
+            });
+            $("#li4").click(function() {
+                $("#InnovationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").show();
+                $("#CharadasMudas").hide();
+                
+            });
+            $("#li5").click(function() {
+                $("#InnovationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").show();
+                
+            });
+        });
+
+    </script>
+    <style>
+        #snackbar2 {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+
+        #snackbar2.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+    </style>
+    <style>
+        .multiselect {
+            width: 200px;
+        }
+
+        .selectBox {
+            position: relative;
+        }
+
+        .selectBox select {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .overSelect {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        #checkboxes {
+            display: none;
+            border: 1px #dadada solid;
+        }
+
+        #checkboxes label {
+            display: block;
+        }
+
+        #checkboxes label:hover {
+            background-color: #1e90ff;
+        }
+		#checkboxes1 {
+            display: none;
+            border: 1px #dadada solid;
+        }
+
+        #checkboxes1 label {
+            display: block;
+        }
+
+        #checkboxes1 label:hover {
+            background-color: #1e90ff;
+        }
+
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Top nav -->
+        <div id="top-nav">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- logo -->
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggle">
+                    <span></span>
+                </button>
+                <!-- Mobile toggle -->
+
+                <!-- social links -->
+                <ul class="social-nav">
+                    <li>
+                        <a href="https://www.instagram.com/saankethika2020/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://rmd.ac.in/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /social links -->
+
+            </div>
+        </div>
+        <!-- /Top nav -->
+
+        <!-- Bottom nav -->
+        <div id="bottom-nav">
+            <div class="container">
+                <nav id="nav">
+
+                    <!-- nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#events">Events</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- /nav -->
+
+                    <!-- button nav -->
+                    <ul class="cta-nav">
+                        <li>
+                            <a href="#register" class="main-button">Register Now</a>
+                        </li>
+                    </ul>
+                    <!-- button nav -->
+
+                    <!-- contact nav -->
+                    <ul class="contact-nav nav navbar-nav">
+                        <li>
+                            <a href="tel: 04467919141">
+                                <i class="fa fa-phone"></i> 044 67919141</a>
+                        </li>
+                        <li>
+                            <a href="#map">
+                                <i class="fa fa-map-marker" href="#"></i> RMD Engineering College</a>
+                        </li>
+                    </ul>
+                    <!-- contact nav -->
+
+                </nav>
+            </div>
+        </div>
+        <!-- /Bottom nav -->
+
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Home -->
+    <div id="home" class="banner-area">
+
+        <!-- Backgound Image -->
+        <div class="bg-image bg-parallax overlay" style="background-image:url(img/background02.png)"></div>
+        <!-- /Backgound Image -->
+
+        <div class="home-wrapper">
+
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="home-content"><br><br><br>
+                  <h1 class="white-text">Welcome To </h1> <center> <br>
+					<img src="img/friends.png"></img></center>
+                  <div class="count">
+          <div class="countd">
+            <span id="days">00</span>
+            DAYS
+          </div>
+
+          <div class="countd">
+            <span id="hours">00</span>
+            HOURS
+          </div>
+
+          <div class="countd">
+            <span id="minutes">00</span>
+            MINUTES
+          </div>
+
+          <div class="countd">
+            <span id="seconds">00</span>
+            SECONDS
+          </div>
+        </div>
+				<script type="text/javascript">
+
+  var count = new Date("Feb 3,2020 10:00:00").getTime();
+  var x = setInterval(function()
+    {
+    var now = new Date().getTime();
+    var d = count - now;
+
+    var days = Math.floor(d/(1000*60*60*24));
+    var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+    var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+    var seconds = Math.floor((d%(1000*60))/1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if(d <= 0){
+      clearInterval(x);
+    }
+  },1000);
+</script>
+
+
+                    <a class="main-button" href="#events">Discover</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /Home -->
+
+    <!-- About -->
+    <div id="about" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- section header -->
+                <div class="section-header text-center">
+                    <h4 class="sub-title">About Us</h4>
+                    <h2>Saankethika 2020</h2>
+                </div>
+                <!-- /section header -->
+
+                <!-- about content -->
+                <div class="col-md-5">
+                    <h4 class="lead">The objective of the symposium is to bring the young budding engineering graduates together to present their findings and discuss future trends, directions and new challenges in the Electronics & Communication field. This symposium aims to intensify the information exchange of their ideas in theoretical research and practical developments.</h4>
+                </div>
+                <!-- /about content -->
+
+                <!-- about content -->
+                <div class="col-md-7">
+					<h4 class="lead">This symposium can be used to discuss what and how the student community can facilitate the process of technology development. This would prove to be a boon to students. It will be a forum for new ideas and concepts and also would endeavour to examine the different dimensions of Electronics & Communication field.</h4>
+                </div>
+                <!-- /about content -->
+
+                <!-- Galery Slider -->
+                <div class="col-md-12">
+                    <div id="galery" class="owl-carousel owl-theme">
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(img/image01.jpg)"></div>
+                            <!-- /single image -->
+
+                        </div>
+                        <!-- single column -->
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(img/image02.jpg)"></div>
+                            <!-- /single image -->
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(img/image03.jpg)"></div>
+                            <!-- /single image -->
+
+                        </div>
+                        <!-- single column -->
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <div class="item-column">
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(img/image04.jpg)"></div>
+                                <!-- /single image -->
+
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(img/image05.jpg)"></div>
+                                <!-- /single image -->
+                            </div>
+
+                            <div class="item-column">
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(img/image06.jpg)"></div>
+                                <!-- /single image -->
+								 <div class="galery-img" style="background-image:url(img/image07.png)"></div>
+
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(img/image08.jpg)"></div>
+                                <!-- /single image -->
+                            </div>
+
+                        </div>
+                        <!-- /single column -->
+
+                    </div>
+                </div>
+                <!-- /Galery Slider -->
+
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+    </div>
+    <!-- /About -->
+
+
+    <!-- Menu -->
+    <div id="events" class="section">
+
+        <!-- Backgound Image -->
+        <div class="bg-image bg-parallax overlay" style="background-image:url(img/background01.jpg)"></div>
+        <!-- /Backgound Image -->
+
+        <!-- container -->
+
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <div class="section-header text-center">
+                    <h4 class="sub-title">Discover</h4>
+                    <h2 class="title white-text">Our Events</h2>
+                </div>
+
+                <!-- menu nav -->
+                <ul class="menu-nav">
+                  <li class="active" id="li1">
+                    <a data-toggle="tab">Casa de Papel</a>
+                  </li>
+                    <li id="li2">
+                        <a data-toggle="tab">Circuito extravaganza</a>
+                  </li>
+                    <li id="li3">
+                        <a data-toggle="tab">Game of Codes</a>
+                    </li>
+                    <li id="li4">
+                        <a data-toggle="tab">QFiesta</a>
+                    </li>
+                    <li id="li5">
+                        <a data-toggle="tab">Word Warcraft</a>
+                    </li>
+                   
+                </ul>
+                <style>
+
+
+                </style>
+                
+                
+                <!-- menu content -->
+                <div id="menu-content" class="tab-content">
+
+                    <!-- menu1 -->
+                    <div id="InnovationMind" class="tab-pane fade in active ">
+                        <div class="col-md-15">
+                             <h2 style="color: #ffd11a; font-size: 20px;">Topic:<br>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Paper Presentation</p>
+                            </h2>
+
+                            <h2 style="color: #ffd11a; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “Let your mind write the paper not your hand”</h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Students have a great platform to express their innovative ideas that could lead to great creations in technology. Take up the challenge to evoke your genuine ideas. Who knows this could bring you fame and glory! <br>
+							<h4 style="color:#ffd11a;"> Rules:</h4>
+• Teams will have to bring hard copies of the full paper on the day of presentation. <br>
+• <font color="black"><strong>2-3 members </strong></font>per team.<br>
+• Each team would be given a time span of 10 minutes to explain their ideas.<br>
+• Last date to submit : <font color="black"><strong>26/01/2020</strong></font>.<br>
+• The judges decisions shall be binding and final. <br>
+• Papers must be submitted to saankethika2020@gmail.com<br>
+• Selected papers will be intimated through mail.
+</p> 
+                            </h2>
+
+                           
+
+               
+                        </div>
+
+                    </div>
+                    <!-- /menu1 -->
+                    <div id="ElectronicsExtrapolated" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                             <h2 style="color: #ffd11a; font-size: 20px;">Topic:<br>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Circuit Soldering</p>
+                            </h2>
+
+                            <h2 style="color: #ffd11a; font-size: 20px;">Description:</h2>
+							<h4>“Design circuits from right ones”</h4>
+                            <!-- single dish -->
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">To all those tech enthusiasts out there, here is the chance to showcase your technical knowledge. Brainstorming, even the smallest tech facts may fetch you whooping advantages.   <br>
+							
+                            </p>
+
+                            
+							<h4 style="color:#ffd11a;"> Rules:</h4>
+							Teams will be shortlisted based on the paper pen test. Shortlisted teams will be given a circuit description that you
+have to solve and solder the components according to the circuit layout you inferred.
+You will be scored on how well and neat your circuit is soldered and implemented with points
+for improvisation as well!!<br>
+							
+
+• <font color='black'><b>2-3 members </b></font> per team. The event organizers will help the lone wolves find their pack!<br>
+• Soldering kit and the electronic components will be provided.<br>
+• Show your soldering skills and have fun.<br>
+• Judges' decision will be final.<br>
+
+                            </p>
+
+                           
+
+                        </div>
+                    </div>
+                    <div id="GameofCodes" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                             <h2 style="color: #ffd11a; font-size: 20px;">Topic:<br>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Coding Contest</p>
+                            </h2>
+                            <h2 style="color: #ffd11a; font-size: 20px;">Description:</h2>
+
+                            <h4 class="name">“Think Twice Code Once”</h4>
+                            <!-- single dish -->
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">The best game plan is the one that has the fewest characters or fewest lines of code. So, code your way to rewards. .</p>
+
+
+                            <!-- <h2 style="color: #ffd11a; font-size: 20px;">Topic:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Technical (Project Presentation)</p>
+                            </h2> -->
+
+
+                            <h2 style="color: #ffd11a; font-size: 20px;">Rules:<br>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">• There will be 2 rounds.<br>
+									• <font color="black"><b>2 members </b></font>per team.<br>
+• Preliminary Round: MCQ based.<br>									
+• Final Round: Coding test.<br>
+• Programming languages allowed: C, C++, Java, Python.<br>
+• Internet access is not allowed.<br>
+
+                            </h2>
+
+
+                            
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="Cryptics" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                             <h2 style="color: #ffd11a; font-size: 20px;">Topic:<br>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Technical and Non-Technical quiz</p>
+                            </h2>
+                            <h2 style="color: #ffd11a; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “A quiz is a form of game or mind sport.”</h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Wisdom begins with wonder. Even though you can compete as a team, a whole game can change based on the random knowledge of a person. RMD provides a platform to test your knowledge and activate your brain with some puzzling and brain storming questions. This is a team event to analyze technical skills, intelligence and presence of mind.
+                            </p>
+
+                            <h2 style="color: #ffd11a; font-size: 20px;">Rules:<br>
+                               
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">• General MCQ's will be given.<br>
+								• Pen and paper based event. Stationary will be provided.<br></p>
+                               
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"></p>
+
+                            </h2>
+
+                            <!--
+                            <h2 style="color: #ffd11a; font-size: 20px;">Last Date Submission:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> 3-08-2018</p>
+                            </h2>
+-->
+
+                            <h2 style="color: #f; font-size: 20px;">
+                                <p style="display:inline; color: #f; font-size: 16px; font-weight: 530">Strictly 2 members per team</p>
+                            </h2>
+
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div id="CharadasMudas" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: #ffd11a; font-size: 20px;">Topic:</h2><b>  Pictionary 
+<h2 style="color: #ffd11a; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+<p style="color:black">                                                        
+<b>
+“Coming together is BEGINNING;<br>
+  Keeping together is PROGRESS;<br>
+  Working together is SUCCESS!”<br>
+</b>                 
+                          </p>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Pictionary is not an imitation but a creation. Here comes your game ‘Word Warcraft’ where picture speaks louder than words. Now here is the chance to show off your creativity, bondness and your individuality.
+                            </p>
+
+							<h2 style="color: #ffd11a; font-size: 20px;">Rules:</h2>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">
+•	Use your creativity to picturize the given word<br>
+•   Strictly <font color="black"><b>2 members </b></font> per team.<br>									
+•   It is a face-off challenge where you compete with the other.<br>
+•   Fast answers push your opponent to spot elimination and your chances of winning brightens.<br>
+•   Alphabetical and other violating pictures are strictly prohibited.<br> 									
+</p>
+
+                            </h2>
+
+                            
+
+                          
+
+                        </div>
+                    </div>
+                    
+                
+                
+                
+                
+                
+             
+                    <!-- /menu content -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /container -->
+
+        </div>
+        <!-- /Menu -->
+    </div>
+    <!-- Reservation -->
+    <div id="register" class="section">
+
+        <!-- Backgound Image -->
+        <div class="bg-image" style="background-image:url(img/background03.jpg)"></div>
+        <!-- /Backgound Image -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- reservation form -->
+				<center>
+                <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                     <form class="reserve-form" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLScNhqmsc4mE1w0lzPTLBEHlWORkbaoWEx5C6sj9eqOCE5zrSA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+						 <div class="section-header text-center">
+                            <div id="snackbar2">Select Atleast One Event</div>
+                            <h4 class="sub-title">Registration</h4>
+                            <h2 class="title white-text">Book Your Events</h2>
+                        </div>
+ <div class="form-group">
+        <label>Name</label>
+        <input class="input" type="text" placeholder="Name" id="name" required name="entry.2092238618">
+      </div>
+   <div class="col-md-6">
+                            
+       <div class="form-group">
+                                <label for="email">Email:</label>
+								<input class="input" type="text" placeholder="Email" id="email" required name="entry.1556369182">
+      </div>
+      <div class="form-group">
+        <label>Phone:</label>
+        <input class="input" type="text" placeholder="Phone" id="phone" required name="entry.225484733">
+      </div>
+	   <div class="form-group">
+        <label>Department:</label>
+        <input class="input" type="text" placeholder="Department" id="dept" required name="entry.720562367">
+      </div>
+	   </div>
+       <div class="col-md-6">
+                            
+		<div class="form-group">				 
+        <label>College Name:</label>
+        <input class="input" type="text" placeholder="College Name" id="cname" required name="entry.479301265">
+      </div>
+		   <div class="form-group" name="entry.1809759571">
+                                <div class="multiselect">
+                                    <label for="number">Events:</label>
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                        <select class="input">
+                                        <option>Select Events</option>
+                                    </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                       
+                                        <label for="one">
+                                          <input type="radio" name="entry.1809759571" id="one" value="Casa de Papel"/>Casa de Papel</label>
+                                        <label for="two">
+                                          <input type="radio" name="entry.1809759571" id="two" value="Circuito Extravaganza"/>Circuito Extravaganza</label>
+          <label for="three"><input type="radio" name="entry.1809759571" id="three" value="Game of Codes"/>Game of Codes</label>
+                                       
+
+                                    </div>
+                                </div>
+            </div>
+         <div class="form-group"  name="entry.1214018025">
+                                <div class="multiselect">
+                                    <label for="number">Events:</label>
+                                    <div class="selectBox" onclick="showCheckboxes1()">
+                                        <select class="input">
+                                        <option>Select Events</option>
+                                    </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes1">
+                                       
+                                       
+                                        <label for="four">
+                                            <input type="radio" name="entry.1214018025" id="four" value="Qfiesta"/>QFiesta</label>
+                                        <label for="five">
+                                       
+                                            <input type="radio" name="entry.1214018025" id="five" value="Word of Warcraft"/>Word Warcraft</label>
+                                    </div>
+                                </div>
+                            </div>
+</div>
+																								
+      <div>
+        <button class="main-button" type="submit">Register</button>
+      </div>
+						  <div id="snackbar">Registered Successfully Completed</div>
+    </form> 
+                    <!-- /reservation form -->
+                </div>
+                <!-- opening time -->
+                <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <div class="opening-time row">
+                        <div class="section-header text-center">
+                            <h2 class="title white-text">Instructions</h2>
+                        </div>
+
+                        <ul>
+                            <li><h4 class="day">Registrations are made only through online and no spot registration.</h4></li>
+                            <li>
+                                <h4 class="day">All Students must bring their college ID Card</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Students are asked to come in formal dress</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day"></h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Online Registration closes on 26th January 2020</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+								<h4 class="day">One registration per team is sufficient.</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Two seperate dropdown of events are present for registration.</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Fee To Register</h4>
+                                <h4 class="hours"> Free</h4>
+                            </li>
+                              
+                        </ul>
+                    </div>
+                </div>
+                <!-- /opening time -->
+            </div>
+        </div>
+        <!-- /row -->
+
+    </div>
+    <!-- /container -->
+
+    <!-- /Reservation -->
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="section-header">
+                        <h4 class="sub-title">Contact Us</h4>
+                        <h2 class="title">Get In Touch</h2>
+                    </div>
+                    <div class="contact-content">
+                        <p>Address: RMD Engineering College, R.S.M Nagar , Kavaraipettai, Tamil Nadu 601206</p>
+                        <p>Email:
+                            <a href="#">saankethika2020@gmail.com</a>
+                        </p>
+                      <p>Tel: <a href="tel:04433303030">044 67919141</a> </p>
+						 
+                        <ul class="list-inline">
+                                    <li> 
+										<p> For Queries Contact: <a href="tel:6369286735">6369286735 </a><em class="fa fa-whatsapp"></em> ,<a href="tel:8825860848">8825860848</a></p>
+                                        <p>Follow Us:    <a href="https://www.instagram.com/saankethika2020">
+											<i class="fa fa-instagram"></i>  <a href="https://www.rmd.ac.in" target="_blank">
+                            <i class="fa fa-globe"></i></p>
+							</li>
+                      </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+        <!-- map -->
+        <div id="map"></div>
+        <!-- /map -->
+
+    </div>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- copyright -->
+                <div class="col-md-6">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><span class="copyright"><font color="Grey"><center>Copyright @2020 All rights reserved.</center></font></span></div>
+                
+                <div class="col-md-6">
+                    
+					<span class="credits" > <font color="Grey">Developed by:</font><a href="https://rmd.ac.in/developer/index.html" class="abcd"><center> Nithish A S, M Rohith Srinivas </center></a></span>
+                    <style>
+                        .abcd {
+                            color: white;
+                        }
+
+                        .abcd:hover {
+                            color: orange;
+                        }
+
+                    </style>
+                </div>
+                
+                <!-- /footer nav -->
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Preloader -->
+<div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+    </script>
+		 <script>
+        var expand = false;
+
+        function showCheckboxes1() {
+            var checkboxes = document.getElementById("checkboxes1");
+            if (!expand) {
+                checkboxes.style.display = "block";
+                expand = true;
+            } else {
+                checkboxes.style.display = "none";
+                expand = false;
+            }
+        }
+
+    </script>
+		<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email cant be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script type="text/javascript" src="js/google-map.js"></script>
+<script src="../../www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
